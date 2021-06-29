@@ -1,5 +1,13 @@
 {
 	"name": "BettosDataFactory",
+	"properties": {
+		"globalParameters": {
+			"TestGlobalParameter": {
+				"type": "string",
+				"value": "Roberttestglobalparameter"
+			}
+		}
+	},
 	"location": "northeurope",
 	"identity": {
 		"type": "SystemAssigned",
