@@ -15,9 +15,9 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/adftutorial/mynotebook",
+					"notebookPath": "/Users/robertyousif@hotmail.se/12-Production-Workloads-with-Azure-Data-Factory/Record-Run",
 					"baseParameters": {
-						"input": "hejhej"
+						"ranBy": "ADF"
 					}
 				},
 				"linkedServiceName": {
