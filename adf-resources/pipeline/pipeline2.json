@@ -1,0 +1,33 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/adftutorial/mynotebook",
+					"baseParameters": {
+						"input": "hejhej"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ry_dbls",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2021-05-18T14:27:28Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

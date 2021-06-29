@@ -1,0 +1,9 @@
+{
+	"name": "BettosDataFactory",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0b3432d8-aaa4-4f37-8948-6532109c07b4",
+		"tenantId": "4f2a686a-d6b5-4b4a-8ccd-158204f12cc8"
+	}
+}
