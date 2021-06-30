@@ -17,7 +17,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"folderPath": {
-					"value": "@<dataset().datestring>/<dataset().datestring>",
+					"value": "@<dataset().datestring/dataset().datestring>",
 					"type": "Expression"
 				},
 				"container": "bettocontqainer123"
