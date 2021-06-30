@@ -1,9 +1,9 @@
 {
-	"name": "pipeline2",
+	"name": "NotebookInputParameterPipeline",
 	"properties": {
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "BettosNoteBookPython",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -15,9 +15,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/robertyousif@hotmail.se/12-Production-Workloads-with-Azure-Data-Factory/Record-Run",
+					"notebookPath": "/Users/robertyousif@hotmail.se/bettosSQLNotebookTest",
 					"baseParameters": {
-						"ranBy": "ADF"
+						"input": {
+							"value": "@pipeline().Pipeline",
+							"type": "Expression"
+						}
 					}
 				},
 				"linkedServiceName": {

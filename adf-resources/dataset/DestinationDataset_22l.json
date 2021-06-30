@@ -5,11 +5,21 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"datestring": {
+				"type": "string",
+				"defaultValue": "2021-06-20"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().datestring",
+					"type": "Expression"
+				},
 				"container": "bettocontqainer123"
 			},
 			"compressionCodec": "snappy"
