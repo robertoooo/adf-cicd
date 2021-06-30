@@ -82,7 +82,7 @@
 						"referenceName": "DestinationDataset_22l",
 						"type": "DatasetReference",
 						"parameters": {
-							"datestring": "2020-06-30"
+							"folder_heirarchy": "2020-06-30"
 						}
 					}
 				]
