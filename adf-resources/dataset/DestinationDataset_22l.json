@@ -2,7 +2,7 @@
 	"name": "DestinationDataset_22l",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -15,12 +15,12 @@
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
+				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@dataset().folder_heirarchy",
+					"value": "@concat(dataset().folder_heirarchy,'/',dataset().folder_heirarchy)",
 					"type": "Expression"
 				},
-				"container": "bettocontqainer123"
+				"fileSystem": "bettoscont"
 			},
 			"compressionCodec": "snappy"
 		},

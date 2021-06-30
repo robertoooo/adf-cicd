@@ -29,7 +29,7 @@
 					"sink": {
 						"type": "ParquetSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
+							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
 							"type": "ParquetWriteSettings"
@@ -80,10 +80,7 @@
 				"outputs": [
 					{
 						"referenceName": "DestinationDataset_22l",
-						"type": "DatasetReference",
-						"parameters": {
-							"folder_heirarchy": "2020-06-30"
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
