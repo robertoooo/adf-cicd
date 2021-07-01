@@ -1,9 +1,9 @@
 {
-	"name": "pipeline2",
+	"name": "NotebookInputParameterPipeline",
 	"properties": {
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "BettosNoteBookPython",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -15,9 +15,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/adftutorial/mynotebook",
+					"notebookPath": "/Users/robertyousif@hotmail.se/bettosSQLNotebookTest",
 					"baseParameters": {
-						"input": "hejhej"
+						"input": {
+							"value": "@pipeline().Pipeline",
+							"type": "Expression"
+						}
 					}
 				},
 				"linkedServiceName": {

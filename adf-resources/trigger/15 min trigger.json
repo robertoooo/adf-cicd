@@ -1,0 +1,27 @@
+{
+	"name": "15 min trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyHTTP",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"pipeparameter": "trigger"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2021-07-01T08:06:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

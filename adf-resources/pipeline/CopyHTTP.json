@@ -29,7 +29,7 @@
 					"sink": {
 						"type": "ParquetSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
+							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
 							"type": "ParquetWriteSettings"
@@ -80,11 +80,29 @@
 				"outputs": [
 					{
 						"referenceName": "DestinationDataset_22l",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"folder_heirarchy": {
+								"value": "@pipeline().parameters.pipeparameter",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"pipeparameter": {
+				"type": "string",
+				"defaultValue": "hejpipe"
+			}
+		},
+		"variables": {
+			"newpath": {
+				"type": "String",
+				"defaultValue": "2020-06-25"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2021-05-16T18:36:47Z"
 	},
