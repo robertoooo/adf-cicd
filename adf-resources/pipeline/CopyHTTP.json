@@ -80,11 +80,23 @@
 				"outputs": [
 					{
 						"referenceName": "DestinationDataset_22l",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"folder_heirarchy": {
+								"value": "@pipeline().parameters.pipeparameter",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"pipeparameter": {
+				"type": "string",
+				"defaultValue": "hejpipe"
+			}
+		},
 		"variables": {
 			"newpath": {
 				"type": "String",
