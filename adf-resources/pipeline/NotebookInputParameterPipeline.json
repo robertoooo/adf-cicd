@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/robertyousif@hotmail.se/bettosSQLNotebookTest",
+					"notebookPath": "/Rob/bettosSQLNotebookTest",
 					"baseParameters": {
 						"input": {
 							"value": "@pipeline().Pipeline",
