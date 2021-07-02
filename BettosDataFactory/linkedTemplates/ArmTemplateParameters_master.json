@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "BettosDataFactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"ry_dbls_accessToken": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://dlaccname.dfs.core.windows.net"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://api.coinbase.com/"
+		},
+		"15 min trigger_properties_CopyHTTP_parameters_pipeparameter": {
+			"value": "trigger"
+		},
+		"dataFactory_properties_globalParameters_TestGlobalParameter_value": {
+			"value": "Roberttestglobalparameter"
+		},
+		"dataFactory_location": {
+			"value": "northeurope"
+		},
+		"dataFactory_identity_type": {
+			"value": "SystemAssigned"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
